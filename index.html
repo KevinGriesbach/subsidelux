@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Subsidelux & Pfoten-Panorama</title>
+    <style>
+      :root {
+        --bg: #daebf6;
+        --card: rgba(255, 255, 255, 0.7);
+        --border: rgba(83, 122, 201, 0.18);
+        --primary: #537ac9;
+        --link-bg: #f7f7f7;
+        --shadow: 0 18px 50px rgba(16, 38, 76, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100dvh;
+        display: grid;
+        place-items: center;
+        padding: 28px 16px;
+        background: radial-gradient(900px 500px at 50% -120px, #ffffff 0%, var(--bg) 62%, var(--bg) 100%);
+        color: #10264c;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji",
+          "Segoe UI Emoji";
+      }
+
+      .wrap {
+        width: min(560px, 100%);
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 22px;
+        box-shadow: var(--shadow);
+        padding: 22px;
+        backdrop-filter: blur(10px);
+      }
+
+      .brand {
+        display: grid;
+        justify-items: center;
+        gap: 14px;
+        padding: 8px 0 16px;
+      }
+
+      .logo {
+        width: 112px;
+        height: 112px;
+        border-radius: 28px;
+        overflow: hidden;
+        background: #fff;
+        border: 1px solid var(--border);
+        box-shadow: 0 10px 30px rgba(16, 38, 76, 0.12);
+        display: grid;
+        place-items: center;
+      }
+
+      .logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: -0.01em;
+        color: var(--primary);
+        text-align: center;
+      }
+
+      .sub {
+        margin: 0;
+        font-size: 13px;
+        line-height: 1.45;
+        text-align: center;
+        opacity: 0.85;
+      }
+
+      .section {
+        margin-top: 14px;
+      }
+
+      .btn {
+        width: 100%;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background: var(--link-bg);
+        color: var(--primary);
+        padding: 14px 14px;
+        border-radius: 14px;
+        border: 1px solid rgba(83, 122, 201, 0.2);
+        transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease;
+      }
+
+      .btn:hover {
+        transform: translateY(-1px);
+        border-color: rgba(83, 122, 201, 0.32);
+        box-shadow: 0 10px 24px rgba(16, 38, 76, 0.1);
+      }
+
+      .btn:active {
+        transform: translateY(0);
+      }
+
+      .icon {
+        width: 38px;
+        height: 38px;
+        border-radius: 12px;
+        background: #fff;
+        border: 1px solid var(--border);
+        display: grid;
+        place-items: center;
+        flex: 0 0 auto;
+        overflow: hidden;
+      }
+
+      .icon img {
+        width: 22px;
+        height: 22px;
+        object-fit: contain;
+        display: block;
+      }
+
+      .meta {
+        display: grid;
+        gap: 2px;
+        min-width: 0;
+      }
+
+      .label {
+        font-weight: 700;
+        font-size: 14px;
+        color: var(--primary);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .hint {
+        font-size: 12px;
+        opacity: 0.8;
+        color: #244b91;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .stack {
+        display: grid;
+        gap: 10px;
+      }
+
+      .foot {
+        margin-top: 14px;
+        text-align: center;
+        font-size: 12px;
+        opacity: 0.65;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="card">
+        <header class="brand">
+          <div class="logo">
+            <img src="./logo.jpg" alt="Logo" />
+          </div>
+          <div>
+            <h1>Besuchen Sie mich auf den Sozialen Medien</h1>
+            <p class="sub">Digital Artwork (Subsidelux_design) und Fotografie (Pfoten-Panorama)</p>
+          </div>
+        </header>
+
+        <div class="section stack" aria-label="Social Links">
+          <a class="btn" href="https://www.instagram.com/pfoten.panorama" target="_blank" rel="noopener noreferrer">
+            <span class="icon"><img src="./instagram.png" alt="" /></span>
+            <span class="meta">
+              <span class="label">Instagram</span>
+              <span class="hint">Pfoten-Panorama</span>
+            </span>
+          </a>
+
+          <a
+            class="btn"
+            href="https://www.tiktok.com/@pfotenpanorama"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="icon"><img src="./tik-tok.png" alt="" /></span>
+            <span class="meta">
+              <span class="label">TikTok</span>
+              <span class="hint">Pfoten-Panorama</span>
+            </span>
+          </a>
+
+          <a
+            class="btn"
+            href="https://www.instagram.com/subsidelux_design"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="icon"><img src="./instagram.png" alt="" /></span>
+            <span class="meta">
+              <span class="label">Instagram</span>
+              <span class="hint">Subsidelux_design</span>
+            </span>
+          </a>
+
+          <a
+            class="btn"
+            href="https://www.tiktok.com/@subsidelux_design"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="icon"><img src="./tik-tok.png" alt="" /></span>
+            <span class="meta">
+              <span class="label">TikTok</span>
+              <span class="hint">Subsidelux_design</span>
+            </span>
+          </a>
+
+          <a class="btn" href="https://wa.me/4915752328752" target="_blank" rel="noopener noreferrer">
+            <span class="icon"><img src="./whatsapp.png" alt="" /></span>
+            <span class="meta">
+              <span class="label">WhatsApp</span>
+              <span class="hint">Subsidelux_design &amp; Pfoten-Panorama</span>
+            </span>
+          </a>
+        </div>
+
+        <div class="section stack" aria-label="Extra Links">
+          <a
+            class="btn"
+            href="https://apps.scrappbook.de/share/SJlLk7pK9-l"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="icon" aria-hidden="true"><span style="font-weight: 800; color: var(--primary)">S</span></span>
+            <span class="meta">
+              <span class="label">Scrappbook Galerie</span>
+              <span class="hint">apps.scrappbook.de</span>
+            </span>
+          </a>
+        </div>
+
+        <p class="foot">© Subsidelux</p>
+      </section>
+    </main>
+  </body>
+</html>
